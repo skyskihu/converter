@@ -1,0 +1,39 @@
+name = "converter"
+main = "src/entry.py"
+compatibility_date = "2025-12-28"
+compatibility_flags = ["python_workers"]
+
+# 配置信息 KV
+[[kv_namespaces]]
+binding = "CONVERTER_CONFIG"
+id = "xxx"
+
+# 模板 KV
+[[kv_namespaces]]
+binding = "CONVERTER_TEMPLATE"
+id = "xxx"
+
+# 智能位置, 按需开启
+#[placement]
+#mode = "smart"
+
+# 路由, 按需开启
+#[[routes]]
+#pattern = "example.com"
+#custom_domain = true
+
+# 日志, 按需开启
+#[observability]
+#enabled = false
+#head_sampling_rate = 1
+#
+#[observability.logs]
+#enabled = true
+#head_sampling_rate = 0.1
+#persist = true
+#invocation_logs = true
+#
+#[observability.traces]
+#enabled = true
+#persist = true
+#head_sampling_rate = 0.1
