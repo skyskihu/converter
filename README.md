@@ -47,7 +47,13 @@ winget install OpenJS.NodeJS.LTS
 npm install -g wrangler
 ```
 
-## 6. Deploy the Project
+## 6. login Wrangler CLI
+
+```bash
+npx wrangler login
+```
+
+## 7. Deploy the Project
 
 ```bash
 deploy.bat
